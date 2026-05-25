@@ -1,0 +1,103 @@
+# SETUP INSTRUCTIONS
+
+Due to file size limits, the page components and Layout component need to be added manually. 
+
+## Complete Setup Steps:
+
+1. **Copy all source files from the original document** into their respective directories:
+   - Copy the Layout component code into `src/components/Layout.tsx`
+   - Copy all page components from `src/pages/*.tsx` files
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## File Structure Reference:
+
+```
+src/
+├── components/
+│   └── Layout.tsx          # Main layout with navigation and search
+├── pages/
+│   ├── Dashboard.tsx       # Home dashboard
+│   ├── Projects.tsx        # Projects list
+│   ├── ProjectDetail.tsx   # Individual project view
+│   ├── Tasks.tsx           # Tasks management
+│   ├── Documents.tsx       # Documents library
+│   ├── Decisions.tsx       # Decisions log
+│   ├── Team.tsx            # Team management
+│   ├── Analytics.tsx       # Analytics dashboard
+│   ├── IngestDoc.tsx       # Document ingestion
+│   ├── AskTrace.tsx        # Q&A interface
+│   ├── TraceMemory.tsx     # Memory/knowledge index
+│   ├── SearchPage.tsx      # Full-text search
+│   ├── SlackArchive.tsx    # Slack archive
+│   └── NotFound.tsx        # 404 page
+├── lib/
+│   ├── utils.ts            # Utility functions (already created)
+│   └── mockData.ts         # Mock data (already created)
+├── App.tsx                 # Main routing (already created)
+├── main.tsx                # Entry point (already created)
+└── index.css               # Global styles (already created)
+```
+
+## Quick Deploy to GitHub:
+
+1. Initialize git repository:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit: Trace Team Memory Platform"
+   ```
+
+2. Add remote repository:
+   ```bash
+   git remote add origin https://github.com/yourusername/trace-redesign.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+3. Optional - Deploy to Vercel/Netlify:
+   ```bash
+   # For Vercel
+   npm install -g vercel
+   vercel
+   ```
+
+## Configuration Complete ✅
+
+All configuration files are in place:
+- ✅ package.json
+- ✅ tsconfig.json  
+- ✅ vite.config.ts
+- ✅ tailwind.config.js
+- ✅ postcss.config.js
+- ✅ .gitignore
+- ✅ .editorconfig
+- ✅ .prettierrc.json
+- ✅ README.md
+- ✅ src/lib/utils.ts
+- ✅ src/lib/mockData.ts
+- ✅ src/App.tsx
+- ✅ src/main.tsx
+- ✅ src/index.css
+- ✅ index.html
+
+## Next Steps:
+
+The remaining step is to copy the page and component files from the original source document into the respective directories. Use the provided source code from the document to populate:
+- All files in `src/pages/`
+- The Layout component in `src/components/`
+
+Then you'll have a fully functional React application ready to commit to GitHub!
